@@ -40,7 +40,7 @@ def main(num_epochs: int):
         coef=True,
         noise=1.0,
     )
-    features, targets, coefs = data
+    features, targets, _ = data
     targets = targets[:, np.newaxis]
     normalized_features = normalize(features)
 
